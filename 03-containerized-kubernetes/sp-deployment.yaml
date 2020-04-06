@@ -14,12 +14,12 @@ spec:
     spec:
       containers:
       - name: shinyproxy
-        image: shinyproxy-example
+        image: colinfay/sp-kube-example:latest
         imagePullPolicy: Never
         ports:
         - containerPort: 8080
       - name: kube-proxy-sidecar
-        image: kube-proxy-sidecar
+        image: colinfay/sp-kube-sidecar:latest
         imagePullPolicy: Never
         ports:
         - containerPort: 8001
